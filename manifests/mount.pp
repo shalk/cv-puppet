@@ -1,0 +1,3 @@
+class cv::mount {
+
+}

@@ -1,0 +1,38 @@
+#net
+stor=<%= @cv_stor_nic %>
+stor_vlan=<%= @cv_stor_vlan %>
+
+biz=<%= @cv_biz_nic %>
+biz_vlan=<%= @cv_biz_vlan %>
+
+mgmt=<%= @cv_mgmt_nic %>
+mgmt_vlan=<%= @cv_mgmt_vlan %>
+
+
+# host
+# mgmt ip
+cvm_mgmt_ip=<%= @cv_cvm_mgmt_ip %>
+cvm_mgmt_netmask=<%= @cv_cvm_mgmt_netmask %>
+
+cvm_default_gateway=<%= @cv_cvm_default_gateway %>
+
+# biz without vlan
+cvm_biz_novlan_ip=<%= @cv_cvm_biz_novlan_ip %>
+cvm_biz_novlan_netmask=<%= @cv_cvm_biz_vlan_netmask %>
+# biz with vlan
+cvm_biz_vlan_ip=<%= @cv_cvm_biz_vlan_ip %>
+cvm_biz_vlan_netmask=<%= @cv_cvm_biz_novlan_netmask %>
+#zkclient
+zkip="<%= @cv_zookeeper_cluster %>"
+#zkip="ip1:2181,ip2:2181,ip3:2181"
+
+#ntp
+ntpip=<%= @cv_ntpip %>
+
+
+#cvm disk save path
+cvmpath="<%= @cv_cvmpath %>"
+
+#directory contains  cloudview1.8.vhd rpm.iso  vrouter_template.vhd  vrouter_template_first.vhd
+cv_vhd_dir="<%= @cv_vhd_for_install_dir %>"
+
